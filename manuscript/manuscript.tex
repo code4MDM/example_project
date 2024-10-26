@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{lipsum}
+
+
+\begin{document}
+
+\title{A Sample Manuscript with a Clean Workflow}
+\author{Jacob Jameson}
+
+\maketitle
+
+\section{Introduction}
+
+This is a simple example of a \LaTeX\ document. Here is an equation:
+
+\begin{equation}
+    e^{i\pi} + 1 = 0
+\end{equation}
+
+\lipsum[1]
+
+
+
+\begin{figure}[h!]
+    \centering
+    \caption{Main caption of the figure.}
+    \includegraphics[width=0.8\textwidth]{outputs/figures/fig_1.png}
+    \captionsetup{justification=centering, font=small} 
+    \caption*{Note: This is an additional note below the main caption.}
+    \label{fig:fig_1}
+\end{figure}
+
+\lipsum[2]
+
+\section{Results}
+
+\lipsum[3]
+
+\input{outputs/tables/table_1.tex}
+
+
+\section{Conclusion}
+
+\lipsum[4-6]
+
+\end{document}
